@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import Neovis from "neovis.js/dist/neovis.js";
 
-const NeoGraph = (props) => {
+export default function NeoGraph(props)  {
   const {
     width,
     height,
@@ -70,6 +70,3 @@ NeoGraph.propTypes = {
   neo4jPassword: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string,
 };
-
-
-export { NeoGraph };
